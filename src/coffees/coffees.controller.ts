@@ -27,6 +27,11 @@ export class CoffeesController {
     return this.coffeesService.findOne(id);
   }
 
+  @Patch('recommend/:id')
+  recommendCoffee(@Param('id') id: number) {
+    return this.coffeesService.recommendCoffee(id);
+  }
+
   @Post()
   create(@Body() createCoffeeDto: CreateCoffeeDto) {
     return this.coffeesService.create(createCoffeeDto);
