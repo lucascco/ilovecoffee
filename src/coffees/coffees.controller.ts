@@ -11,9 +11,9 @@ import {
 } from '@nestjs/common';
 import { CreateCoffeeDto } from './dto/create-coffee.dto';
 import { UpdateCoffeeDto } from './dto/update-coffee.dto';
-import { PaginationQueryDto } from 'src/common/dto/pagination-query.dto';
-import { Public } from 'src/common/decorators/public.decorators';
-import { ParseIntPipe } from 'src/common/pipes/parse-int.pipe';
+import { PaginationQueryDto } from './../common/dto/pagination-query.dto';
+import { Public } from './../common/decorators/public.decorators';
+import { ParseIntPipe } from './../common/pipes/parse-int.pipe';
 import { ApiResponse, ApiTags } from '@nestjs/swagger';
 
 @ApiTags('coffees')
